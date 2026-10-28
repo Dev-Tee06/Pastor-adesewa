@@ -37,11 +37,9 @@ img { display: block; max-width: 100%; }
 }
 .site-header.is-scrolled { color: var(--ink); background: rgba(247,245,240,.97); box-shadow: 0 1px 0 rgba(26,27,34,.08); }
 .header-inner { width: min(1320px, calc(100% - 96px)); height: 100%; margin: auto; display: flex; align-items: center; justify-content: space-between; }
-.wordmark { display: inline-flex; align-items: center; gap: 12px; }
-.wordmark-mark { min-width: 51px; height: 35px; display: inline-flex; align-items: center; justify-content: center; gap: 2px; padding: 0 6px; border: 1px solid var(--gold); border-radius: 20px; color: var(--gold); font: 700 9px/1 "DM Sans", sans-serif; letter-spacing: -.06em; }
-.fire-emoji { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 13px; letter-spacing: normal; line-height: 1; }
-.wordmark-name { font: 700 13px var(--serif); letter-spacing: .01em; }
-.wordmark-name span { display: block; margin-top: 2px; font-size: 11px; opacity: .7; }
+.wordmark { display: inline-flex; align-items: center; }
+.site-header .wordmark { padding: 3px 6px; background: var(--navy); }
+.wordmark-logo { width: 190px; height: auto; }
 .desktop-nav { display: flex; align-items: center; gap: 36px; margin-left: auto; margin-right: 45px; }
 .desktop-nav a { position: relative; font-size: 11px; letter-spacing: .045em; opacity: .82; transition: opacity .2s ease; }
 .desktop-nav a::after { position: absolute; content: ""; height: 1px; bottom: -7px; left: 0; width: 0; background: var(--gold); transition: width .2s ease; }
@@ -210,6 +208,7 @@ h2 { margin: 19px 0 0; color: var(--ink); font: 400 clamp(42px, 5vw, 62px)/1.13 
   html { scroll-padding-top: 68px; }
   .site-header { height: 68px; }
   .header-inner, .hero-content { width: calc(100% - 42px); }
+  .wordmark-logo { width: 160px; }
   .desktop-nav, .header-cta { display: none; }
   .menu-toggle { display: grid; width: 40px; height: 40px; place-items: center; border: 1px solid rgba(255,255,255,.45); color: inherit; background: transparent; cursor: pointer; }
   .site-header.is-scrolled .menu-toggle { border-color: rgba(20,28,53,.22); }
@@ -260,7 +259,6 @@ h2 { margin: 19px 0 0; color: var(--ink); font: 400 clamp(42px, 5vw, 62px)/1.13 
   .lightbox-next { right: 7px; }
 }
 @media (max-width: 390px) {
-  .wordmark-name { font-size: 12px; }
   .sermon { grid-template-columns: minmax(90px, .72fr) minmax(0, 1.28fr); gap: 13px; padding: 11px; }
   .sermon-info h3 { font-size: 22px; }
   .sermon-info .eyebrow { font-size: 7px; }

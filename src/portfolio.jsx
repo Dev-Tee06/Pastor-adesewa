@@ -9,6 +9,7 @@ import {
   X,
 } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import logo from "./assets/logo.png";
 import image0 from "../5981206581112148164_120.jpg";
 import image1 from "../5981206581112148165_120.jpg";
 import image2 from "../5981206581112148166_120.jpg";
@@ -171,12 +172,7 @@ function Header() {
           onClick={closeMenu}
           aria-label="Pastor Adesewa Apelehin, home"
         >
-          <span className="wordmark-mark" aria-label="PAA">
-            PAA <span className="fire-emoji" aria-hidden="true">🔥</span>
-          </span>
-          <span className="wordmark-name">
-            Pastor Adesewa <span>Apelehin</span>
-          </span>
+          <img className="wordmark-logo" src={logo} alt="" />
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
           {navigation.map(([label, href]) => (
@@ -725,12 +721,7 @@ function App() {
       <footer className="footer">
         <div className="footer-main">
           <a className="wordmark footer-wordmark" href="#home">
-            <span className="wordmark-mark" aria-label="PAA">
-              PAA <span className="fire-emoji" aria-hidden="true">🔥</span>
-            </span>
-            <span className="wordmark-name">
-              Pastor Adesewa <span>Apelehin</span>
-            </span>
+            <img className="wordmark-logo" src={logo} alt="Pastor Adesewa Apelehin" />
           </a>
           <p>Ministry, messages &amp; moments.</p>
           <a

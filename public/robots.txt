@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pastor-adesewa.vercel.app/sitemap.xml
