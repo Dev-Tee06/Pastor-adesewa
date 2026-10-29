@@ -103,8 +103,7 @@ const ministryFocus = [
   },
   {
     title: "Youth & gospel gatherings",
-    description:
-      "Involvement in youth and gospel events.",
+    description: "Involvement in youth and gospel events.",
   },
 ];
 
@@ -460,16 +459,16 @@ function App() {
                     CRM activities across Ekiti State. Her responsibilities
                     include overseeing programmes, congresses, and student
                     fellowships across chapters such as RCF Ikole, RCF Oye, RCF
-                    Ido, and Federal Polytechnic Ado-Ekiti.
+                    EKSU RCF Ido, Federal Polytechnic Ado-Ekiti and many other
+                    chapters.
                   </p>
                 </div>
                 <div className="ministry-detail">
                   <h3>Preaching Themes</h3>
                   <p>
-                    Her recent teaching themes include discipline, faithfulness
-                    in small responsibilities, captured in the theme “Faithful
-                    in Little,” and raising a new generation of spiritual
-                    leaders.
+                    Her teaching themes include discipline, faithfulness in
+                    small responsibilities and raising a new generation of
+                    spiritual leaders.
                   </p>
                 </div>
               </div>
@@ -481,11 +480,17 @@ function App() {
           <div className="ministry-focus">
             <Reveal className="ministry-focus-heading">
               <p className="eyebrow">MINISTRY IN FOCUS</p>
-              <h3>Serving across <em>generations.</em></h3>
+              <h3>
+                Serving across <em>generations.</em>
+              </h3>
             </Reveal>
             <div className="ministry-focus-grid">
               {ministryFocus.map((item, index) => (
-                <Reveal className="focus-card" key={item.title} delay={0.05 + index * 0.07}>
+                <Reveal
+                  className="focus-card"
+                  key={item.title}
+                  delay={0.05 + index * 0.07}
+                >
                   <span className="focus-card-number">0{index + 1}</span>
                   <h4>{item.title}</h4>
                   <p>{item.description}</p>
@@ -584,7 +589,9 @@ function App() {
                   </span>
                 </a>
                 <div className="sermon-info">
-                  <p className="eyebrow eyebrow-light">SPOTIFY MESSAGE 0{index + 1}</p>
+                  <p className="eyebrow eyebrow-light">
+                    SPOTIFY MESSAGE 0{index + 1}
+                  </p>
                   <h3>{sermon.title}</h3>
                   <a
                     className="sermon-listen"
@@ -600,7 +607,10 @@ function App() {
           </div>
         </section>
 
-        <section className="everyday section-pad" aria-labelledby="everyday-title">
+        <section
+          className="everyday section-pad"
+          aria-labelledby="everyday-title"
+        >
           <div className="everyday-inner">
             <Reveal className="everyday-heading">
               <p className="eyebrow">FOR THE WEEK AHEAD</p>
@@ -608,8 +618,8 @@ function App() {
                 Faith for <em>everyday life.</em>
               </h2>
               <p className="everyday-intro">
-                A moment to pause, reflect on the messages, and carry a meaningful thought into
-                the week ahead.
+                A moment to pause, reflect on the messages, and carry a
+                meaningful thought into the week ahead.
               </p>
             </Reveal>
             <div className="everyday-list">
@@ -617,21 +627,30 @@ function App() {
                 <span>01</span>
                 <div>
                   <h3>Be faithful in little</h3>
-                  <p>Give care and attention to the responsibilities already in front of you.</p>
+                  <p>
+                    Give care and attention to the responsibilities already in
+                    front of you.
+                  </p>
                 </div>
               </Reveal>
               <Reveal className="everyday-item" delay={0.13}>
                 <span>02</span>
                 <div>
                   <h3>Make room for discipline</h3>
-                  <p>Let steady, thoughtful choices shape the way you learn, serve, and grow.</p>
+                  <p>
+                    Let steady, thoughtful choices shape the way you learn,
+                    serve, and grow.
+                  </p>
                 </div>
               </Reveal>
               <Reveal className="everyday-item" delay={0.2}>
                 <span>03</span>
                 <div>
                   <h3>Encourage the next generation</h3>
-                  <p>Share what you have learned and help others find room to grow into leadership.</p>
+                  <p>
+                    Share what you have learned and help others find room to
+                    grow into leadership.
+                  </p>
                 </div>
               </Reveal>
             </div>
@@ -721,7 +740,11 @@ function App() {
       <footer className="footer">
         <div className="footer-main">
           <a className="wordmark footer-wordmark" href="#home">
-            <img className="wordmark-logo" src={logo} alt="Pastor Adesewa Apelehin" />
+            <img
+              className="wordmark-logo"
+              src={logo}
+              alt="Pastor Adesewa Apelehin"
+            />
           </a>
           <p>Ministry, messages &amp; moments.</p>
           <a
